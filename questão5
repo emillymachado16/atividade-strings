@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i, j = 0;
+    char string[10], seg_string[10];
+    
+    printf("Informe a primeira palavra: ");
+    scanf("%s", string);
+    printf("Informe a segunda palavra: ");
+    scanf("%s", seg_string);
+    
+    
+    for(i = 0; i < strlen(string); i++){
+        if(string[i] == seg_string[j]){
+            j++;
+        }else if (j == strlen(seg_string)){
+            j = 0;
+        }
+    }
+        if(j!=0){
+        printf("Ha a letra %c na palavra", seg_string[0]);
+        }else{
+            j=-1;
+            printf("Nao ha a letra %c na palavra \n%i", seg_string[0], j);
+        }
+
+    return 0;
+}
