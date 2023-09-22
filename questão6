@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i, j = 0;
+    char string[10], seg_string[10];
+    
+    printf("Informe a primeira palavra: ");
+    scanf("%s", string);
+    printf("Informe a segunda palavra: ");
+    scanf("%s", seg_string);
+    
+    
+    for(i = 0; i < strlen(string); i++){
+        if(string[i] == seg_string[j]){
+            j++;
+        }else if (j == strlen(seg_string)){
+            j = 0;
+        }
+    }
+        if(j==0){
+        j = -1;
+        }
+        
+    printf("\nResultado: %i", j);
+
+    return 0;
+}
