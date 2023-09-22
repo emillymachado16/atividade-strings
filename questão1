@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 0, tam = 0;
+    char string[30];
+    printf("Informe uma palavra: ");
+    scanf("%s", string);
+    
+    while(i < 30){
+        if(string[i] != '\0'){
+        tam++;
+    }
+        i++;
+    }
+    printf("Tamanho: %i", tam);
+
+    return 0;
+}
