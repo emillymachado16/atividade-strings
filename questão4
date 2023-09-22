@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char concat1[5], concat2[5], concat_resul1[5], concat_resul2[5];
+    printf("Digite a primeira palavra: ");
+    scanf("%s", concat1);
+    printf("Digite a segunda palavra: ");
+    scanf("%s", concat2);
+    
+    strcpy(concat_resul1, concat1);
+    strcat(concat_resul2, concat2);
+    
+    printf("\nResultado: %s%s", concat_resul1, concat_resul2);
+    return 0;
+}
